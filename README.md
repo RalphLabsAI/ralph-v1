@@ -1,3 +1,7 @@
+> [!IMPORTANT]
+> This repository is archived v1 history and is not the current SN40 protocol.
+> Continue at **[RalphLabsAI/ralph](https://github.com/RalphLabsAI/ralph)**.
+
 <p align="center">
   <img src="docs/assets/ralph-banner.png" alt="Ralph — decentralized · autonomous · AI research" width="100%">
 </p>
@@ -12,7 +16,7 @@
   🟢 <b><a href="https://taostats.io/subnets/40">Live on mainnet — netuid 40</a></b> ·
   🌐 <a href="https://ralphlabs.ai">ralphlabs.ai</a> ·
   📄 <a href="docs/Ralph-Whitepaper-v1.3.pdf">Whitepaper v1.3</a> ·
-  🏷️ <a href="https://github.com/RalphLabsAI/ralph/releases">Releases</a> ·
+  🏷️ <a href="https://github.com/RalphLabsAI/ralph-v1/releases">Releases</a> ·
   📊 <a href="https://wandb.ai/ralphlabs-hub/ralph">Wandb</a> ·
   💬 <a href="https://github.com/orgs/RalphLabsAI/discussions">Discussions</a>
 </p>
@@ -73,10 +77,10 @@ A score is only worth the execution behind it. Ralph v1.3 (§5.4) replaces the e
 | Phase | Status | Key results |
 |---|---|---|
 | **0 — MVP** | ✅ | End-to-end protocol on CPU: model, training, eval, proof-test, validator, scoring, king-change cycle |
-| **0.5 — H100** | ✅ ([`v0.5.0`](https://github.com/RalphLabsAI/ralph/releases/tag/v0.5.0) · [results](https://github.com/orgs/RalphLabsAI/discussions/4)) | Real data (1B tokens FineWeb-Edu), noise floor measured (2σ = 0.013 val_bpb), Ralph-1 trained (254M params, loss 3.82) |
-| **0.5b — Optimization** | ✅ ([`v0.5.1`](https://github.com/RalphLabsAI/ralph/releases/tag/v0.5.1)) | bf16: 3.8× throughput (63K tok/s), same loss; live wandb monitoring; Streamlit dashboard |
+| **0.5 — H100** | ✅ ([`v0.5.0`](https://github.com/RalphLabsAI/ralph-v1/releases/tag/v0.5.0) · [results](https://github.com/orgs/RalphLabsAI/discussions/4)) | Real data (1B tokens FineWeb-Edu), noise floor measured (2σ = 0.013 val_bpb), Ralph-1 trained (254M params, loss 3.82) |
+| **0.5b — Optimization** | ✅ ([`v0.5.1`](https://github.com/RalphLabsAI/ralph-v1/releases/tag/v0.5.1)) | bf16: 3.8× throughput (63K tok/s), same loss; live wandb monitoring; Streamlit dashboard |
 | **0.5c — Attestation** | ✅ code-complete | TDX + nvtrust module: auto-detects CC hardware, falls back to mock; untested on real CC (needs Azure NCC / GCP A3-Confidential) |
-| **0.5d — Testnet** | ✅ ([`v0.6.0`](https://github.com/RalphLabsAI/ralph/releases/tag/v0.6.0)) | Testnet (netuid 16): two miners competed, validator set weights on-chain, king changed |
+| **0.5d — Testnet** | ✅ ([`v0.6.0`](https://github.com/RalphLabsAI/ralph-v1/releases/tag/v0.6.0)) | Testnet (netuid 16): two miners competed, validator set weights on-chain, king changed |
 | **1.0 — Mainnet** | 🟢 live | Registered on **netuid 40**; multi-scale downstream ladder + private-hard eval; transfer-credibility test pre-registered |
 
 ## Repo layout
@@ -156,7 +160,7 @@ streamlit run dashboard/app.py
 | Ralph-1 bf16 (same model, same data) | Final loss = 3.82, **63.4K tok/s, 69 min (3.8× faster)** |
 
 Full results: [Phase 0.5 Discussion](https://github.com/orgs/RalphLabsAI/discussions/4) ·
-Release: [`v0.5.0`](https://github.com/RalphLabsAI/ralph/releases/tag/v0.5.0)
+Release: [`v0.5.0`](https://github.com/RalphLabsAI/ralph-v1/releases/tag/v0.5.0)
 
 ## License
 
